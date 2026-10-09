@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Artificial Intelligence — Interactive Presentation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <canvas id="gl"></canvas>
+
+  <div id="bar"></div>
+
+  <!-- INTRO -->
+  <div id="intro">
+
+    <div class="eyebrow">
+      INTERACTIVE PRESENTATION
+    </div>
+
+    <h1>
+      ARTIFICIAL<br>
+      INTELLIGENCE
+    </h1>
+
+    <p>
+      Explore the history, meaning, types, advantages,
+      disadvantages, and project behind Artificial Intelligence.
+    </p>
+
+    <button id="start">
+      Start Presentation →
+    </button>
+
+    <small>
+      Auto-starts in <span id="timer">7</span>s
+      · Arrow keys / swipe · F for fullscreen
+    </small>
+
+  </div>
+
+
+  <!-- SCANNER -->
+  <div id="finalScanner">
+
+    <div class="scanGrid"></div>
+
+    <div class="scanGlow"></div>
+
+    <div class="scanBeam"></div>
+
+    <div class="scanText">
+      SYSTEM READY
+    </div>
+
+  </div>
+
+
+  <!-- PRESENTATION -->
+  <main id="stage">
+
+    <section id="panel" aria-live="polite"></section>
+
+  </main>
+
+
+  <!-- NAVIGATION -->
+  <nav id="nav">
+
+    <button id="prev">
+      Back
+    </button>
+
+    <div id="dots"></div>
+
+    <span id="count"></span>
+
+    <button id="next">
+      Next
+    </button>
+
+  </nav>
+
+
+  <!-- THREE.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- YOUR JAVASCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
